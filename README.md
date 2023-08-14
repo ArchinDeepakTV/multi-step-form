@@ -1,2 +1,3 @@
 # multi-step-form
-a multi step form to enter credentials for registering a new car
+
+a multi step form to enter credentials for buying a new bike
