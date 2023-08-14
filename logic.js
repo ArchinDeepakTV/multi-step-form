@@ -14,7 +14,7 @@ function logs() {
 
 function callTheNextPage(cName, phNo, bikeModel) {
   url =
-    "./basic-details.html?name=" +
+    "./basic-details.html?cName=" +
     cName +
     "&ph=" +
     phNo.toString() +
