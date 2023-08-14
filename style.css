@@ -1,0 +1,19 @@
+html{
+    background-color: black;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.flex input,select,label,button {
+    align-self: center;
+    justify-content: center;
+    font-family: 'Caprasimo', cursive;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
