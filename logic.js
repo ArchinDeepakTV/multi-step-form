@@ -1,4 +1,4 @@
-function A() {
+function logging() {
   const name = document.getElementById("name");
   const phNo = document.getElementById("phone-number");
   const bikeModel = document.getElementById("bikes");
