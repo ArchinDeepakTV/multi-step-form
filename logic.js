@@ -1,4 +1,4 @@
-function logging() {
+function logs() {
   const customerName = document.getElementById("name");
   const phNo = document.getElementById("phone-number");
   const bikeModel = document.getElementById("bikes");
@@ -10,5 +10,7 @@ function logging() {
     phone: phNo.value,
     model: bikeModel.value,
   };
-  module.exports = { customerDetails };
+  window.location.href = "./basic-details.html";
+  // make a ceaser cipher and send the values through url
+  // https://www.plus2net.com/php_tutorial/variables2.php
 }
