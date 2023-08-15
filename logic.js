@@ -6,6 +6,7 @@ function logs() {
   console.log(phNo.value);
   console.log(bikeModel.value);
   cName = cipher(customerName.value);
+  // cName = customerName.value;
   callTheNextPage(cName, phNo.value, bikeModel.value);
 
   // make a ceaser cipher and send the values through url
@@ -14,7 +15,9 @@ function logs() {
 
 function callTheNextPage(cName, phNo, bikeModel) {
   url =
-    "./basic-details.html?cName=" +
+    "./basic-details.html?a=" +
+    parseInt(Math.random() * 1000) +
+    "&cName=" +
     cName +
     "&ph=" +
     phNo.toString() +
@@ -28,7 +31,7 @@ function cipher(customerName) {
   index = 0;
   for (let i = 0; i < customerName.length; i++) {
     let a;
-    if (customerName[i] == " ") a = " ";
+    if (customerName[i] == " ") a = ",";
     else {
       a = customerName[i].charCodeAt(index) + 3;
       a = String.fromCharCode(a);
