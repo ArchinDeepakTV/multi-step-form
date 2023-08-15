@@ -28,12 +28,11 @@ function callTheNextPage(cName, phNo, bikeModel) {
 
 function cipher(customerName) {
   cName = "";
-  index = 0;
   for (let i = 0; i < customerName.length; i++) {
     let a;
     if (customerName[i] == " ") a = ",";
     else {
-      a = customerName[i].charCodeAt(index) + 3;
+      a = customerName[i].charCodeAt(0) + 3;
       a = String.fromCharCode(a);
       // console.log(a);
     }
