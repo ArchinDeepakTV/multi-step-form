@@ -14,57 +14,77 @@
     />
   </head>
   <body>
-    <div class="flex" style="flex-direction: row">
-      <div>
+    <div class="flexContainer">
+      <div class="images" style="width: 75%">
         <img
           src="./assets/img/re2.jpg"
           alt="royal enfield logo"
-          style="width: 75vw; max-height: 90vh; margin-top: 3%"
+          style="width: 75vw; height: 99vh; object-fit: cover; margin-top: 3px"
         />
       </div>
-      <div
-        class="flex"
-        style="
-          /* background-color: aqua; */
-          gap: 3vh;
-          justify-content: center;
-          align-items: center;
-          width: 50%;
-        "
-      >
+      <div class="flexContainer" style="width: 25%; flex-direction: column">
         <h1
           class="headers"
           style="
             text-align: center;
             font-family: 'Tilt Prism', cursive;
             font-size: 75px;
-            margin-bottom: 1%;
+            margin-bottom: 20%;
             margin-top: 0%;
             color: whitesmoke;
           "
         >
           Royal Enfield
         </h1>
-        <input
-          type="text"
-          placeholder="name"
-          id="name"
-          maxlength="20"
-          size="20"
-          style="text-align: center; font-size: 24px"
-        />
-        <input
-          type="number"
-          placeholder="phone number 10 digits"
-          id="phone-number"
-          maxlength="10"
-          style="text-align: center; font-size: 20px"
-        />
-        <!-- <label for="bikes" style="font-size: 18px"><b>choose a model</b></label> -->
+        <div class="gridContainer">
+          <input
+            type="text"
+            placeholder="NAME"
+            style="border: none; text-align: center; font-weight: bold"
+            size="4"
+            disabled
+          />
+          <input
+            type="text"
+            id="cName"
+            maxlength="20"
+            size="20"
+            style="text-align: center; font-size: 24px"
+            autofocus
+          />
+          <input
+            type="text"
+            placeholder="PHONE No."
+            style="border: none; text-align: center; font-weight: bold"
+            size="4"
+            disabled
+          />
+          <input
+            type="text"
+            id="cName"
+            maxlength="10"
+            size="10"
+            style="text-align: center; font-size: 24px"
+          />
+          <input
+            type="text"
+            placeholder=""
+            style="border: none; text-align: center; font-weight: bold"
+            size="4"
+            disabled
+          />
+        </div>
         <select
           name="bikes"
           id="bikes"
-          style="text-align: center; font-size: 20px"
+          style="
+            text-align: center;
+            font-size: 20px;
+            width: 100%;
+            height: 8%;
+            margin-top: 8%;
+            color: white;
+          "
         >
           <option value="none" selected disabled hidden>choose a model</option>
           <option value="classic350">Classic 350</option>
@@ -79,9 +99,14 @@
         <button
           id="btn"
           style="
-            border: 2px inset black;
+            border: 2px solid whitesmoke;
             font-size: 24px;
+            color: white;
             font-family: 'Bebas Neue', sans-serif;
+            justify-content: center;
+            margin-top: 10%;
+            padding: 3%;
+            align-self: center;
           "
           onclick="logs()"
         >
