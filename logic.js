@@ -1,5 +1,5 @@
 function logs() {
-  const customerName = document.getElementById("name");
+  const customerName = document.getElementById("cName");
   const phNo = document.getElementById("phone-number");
   const bikeModel = document.getElementById("bikes");
   console.log(customerName.value);
