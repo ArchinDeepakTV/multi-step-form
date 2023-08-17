@@ -2,3 +2,17 @@
     display: flex;
     flex-direction: column;
 }
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+label {
+    text-align: right;
+}
