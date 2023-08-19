@@ -30,6 +30,7 @@
           style="
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 1fr);
+            gap: 6px;
           "
         >
           <label
@@ -37,62 +38,79 @@
             style="grid-row: 1; grid-column: 1; text-align: right"
             ><b>NAME</b></label
           >
-          <input
-            type="text"
-            placeholder=" "
+          <span
             id="cName"
             style="
-              border: none;
-              text-align: center;
+              /* border: 2px solid black; */
               font-weight: bold;
               grid-row: 1;
-              grid-column: 2;
+              grid-column: span 2;
+              margin-left: 30px;
             "
-            size="4"
-            disabled
-          />
+          ></span>
           <label
             for="phone-number"
             style="grid-row: 2; grid-column: 1; text-align: right"
             ><b>PHONE No.</b></label
           >
-          <input
-            type="text"
-            placeholder=" "
+          <span
             id="phone-number"
             style="
-              border: none;
-              text-align: center;
+              /* border: 2px solid black; */
               font-weight: bold;
               grid-row: 2;
               grid-column: 2;
+              margin-left: 30px;
             "
-            size="4"
-            disabled
-          />
+          ></span>
           <label
             for="model"
             style="grid-row: 3; grid-column: 1; text-align: right"
             ><b>MODEL</b></label
           >
-          <input
-            type="text"
-            placeholder=" "
+          <span
             id="model"
             style="
-              border: none;
-              text-align: center;
+              /* border: 2px solid black; */
               font-weight: bold;
               grid-row: 3;
               grid-column: span 3;
-              text-align: left;
-              padding-left: 33px;
+              margin-left: 30px;
             "
-            size="4"
-            disabled
-          />
+          ></span>
         </div>
-        <div class="gridContainer" id="dataCollection"></div>
+        <div
+          class="gridContainer"
+          id="dataCollection"
+          style="
+            margin-top: 10%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 6px;
+            background-color: aquamarine;
+          "
+        >
+          <select
+            name="color"
+            id="colors"
+            style="
+              text-align: center;
+              font-size: 20px;
+              width: 100%;
+              height: 100%;
+              color: black;
+              font-weight: bold;
+              grid-column: span 3;
+              grid-row: 1;
+            "
+          ></select>
+          <button
+            id="previewButton"
+            style="grid-column: 4; grid-row: 1; border: none"
+          >
+            PREVIEW
+          </button>
+        </div>
       </div>
     </div>
     <script src="basicLogic.js"></script>
