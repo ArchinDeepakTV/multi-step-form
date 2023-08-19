@@ -149,3 +149,25 @@ if (model == "gt650") {
 document.getElementById("cName").innerHTML = cName.toUpperCase();
 document.getElementById("phone-number").innerHTML = phNo;
 document.getElementById("model").innerHTML = model.toUpperCase();
+
+function logs() {
+  const colorName = document.getElementById("colors").value;
+  if (model == "Royal Enfield Continental GT 650")
+    document.getElementById("imgs").src =
+      "./assets/img/gt650/" + colorName + ".jpg";
+  else if (model == "Royal Enfield Interceptor GT 650")
+    document.getElementById("imgs").src =
+      "./assets/img/interceptor650/" + colorName + ".jpg";
+  else if (model == "Royal Enfield Himalayan 350")
+    document.getElementById("imgs").src =
+      "./assets/img/himalayan350/" + colorName + ".jpg";
+  else if (model == "Royal Enfield Meteor 350")
+    document.getElementById("imgs").src =
+      "./assets/img/meteor350/" + colorName + ".jpg";
+  else if (model == "Royal Enfield Classic 350")
+    document.getElementById("imgs").src =
+      "./assets/img/classic50/" + colorName + ".jpg";
+  else if (model == "Royal Enfield Thunderbird X 350")
+    document.getElementById("imgs").src =
+      "./assets/img/x350/" + colorName + ".jpg";
+}
