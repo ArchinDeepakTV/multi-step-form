@@ -25,35 +25,74 @@
         >
           ROYAL ENFIELD
         </h1>
-        <div class="gridContainer">
-          <label for="cName"><b>NAME</b></label>
+        <div
+          class="gridContainer"
+          style="
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+          "
+        >
+          <label
+            for="cName"
+            style="grid-row: 1; grid-column: 1; text-align: right"
+            ><b>NAME</b></label
+          >
           <input
             type="text"
             placeholder=" "
             id="cName"
-            style="border: none; text-align: center; font-weight: bold"
+            style="
+              border: none;
+              text-align: center;
+              font-weight: bold;
+              grid-row: 1;
+              grid-column: 2;
+            "
             size="4"
             disabled
           />
-          <label for="phone-number"><b>PHONE No.</b></label>
+          <label
+            for="phone-number"
+            style="grid-row: 2; grid-column: 1; text-align: right"
+            ><b>PHONE No.</b></label
+          >
           <input
             type="text"
             placeholder=" "
             id="phone-number"
-            style="border: none; text-align: center; font-weight: bold"
+            style="
+              border: none;
+              text-align: center;
+              font-weight: bold;
+              grid-row: 2;
+              grid-column: 2;
+            "
             size="4"
             disabled
           />
-          <label for="model"><b>MODEL</b></label>
+          <label
+            for="model"
+            style="grid-row: 3; grid-column: 1; text-align: right"
+            ><b>MODEL</b></label
+          >
           <input
             type="text"
             placeholder=" "
             id="model"
-            style="border: none; text-align: center; font-weight: bold"
+            style="
+              border: none;
+              text-align: center;
+              font-weight: bold;
+              grid-row: 3;
+              grid-column: span 3;
+              text-align: left;
+              padding-left: 33px;
+            "
             size="4"
             disabled
           />
         </div>
+        <div class="gridContainer" id="dataCollection"></div>
       </div>
     </div>
     <script src="basicLogic.js"></script>
