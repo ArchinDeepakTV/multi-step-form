@@ -28,8 +28,8 @@ function reverseCipher(customerName) {
 const bikeColors = document.getElementById("colors");
 if (model == "gt650") {
   const gt650Colors = {
+    "COLOR SELECT": "selectColor",
     "BRITISH RACING GREEN": "britishRacingGreen",
-    "ROCKER RED": "rockerRed",
     "DUX DELUXE": "duxDeluxe",
     "MISTER CLEAN": "misterClean",
     "SPLIPSTREAM BLUE": "slipstreamBlue",
@@ -47,6 +47,7 @@ if (model == "gt650") {
   document.getElementById("imgs").src = "./assets/img/GT650.jpg";
 } else if (model == "classic350") {
   const classic350Colors = {
+    "COLOR SELECT": "selectColor",
     "CHROME RED": "chromeRed",
     "CHROME BRONZE": "chromeBronze",
     "GUNMETAL GREY": "gunmetalGrey",
@@ -70,6 +71,7 @@ if (model == "gt650") {
   document.getElementById("imgs").src = "./assets/img/classic350.jpg";
 } else if (model == "thunderbird") {
   const x350Colors = {
+    "COLOR SELECT": "selectColor",
     "WHIMSICAL WHITE": "whimsicalWhite",
     "ROVING RED": "rovingRed",
   };
@@ -85,6 +87,7 @@ if (model == "gt650") {
   document.getElementById("imgs").src = "./assets/img/thunderbird.jpg";
 } else if (model == "meteor") {
   const meteorColors = {
+    "COLOR SELECT": "selectColor",
     "FIREBALL RED": "fireballRed",
     "FIREBALL BLACK CUSTOM": "fireballBlack",
     "SUPERNOVA RED": "supernovaRed",
@@ -108,6 +111,7 @@ if (model == "gt650") {
   document.getElementById("imgs").src = "./assets/img/meteor.jpg";
 } else if (model == "himalayan") {
   const himalayanColors = {
+    "COLOR SELECT": "selectColor",
     "DUNE BROWN": "duneBrown",
     "PINE GREEN": "pineGreen",
     "GRANITE BLACK": "graniteBlack",
@@ -127,6 +131,7 @@ if (model == "gt650") {
   document.getElementById("imgs").src = "./assets/img/himalayan.jpg";
 } else if (model == "interceptor650") {
   const interceptor650Colors = {
+    "COLOR SELECT": "selectColor",
     "BLACK RAY": "blackRay",
     "BARCELONA BLUE": "barcelonaBlue",
     "BLACK PEARL": "blackPearl",
@@ -170,4 +175,18 @@ function logs() {
   else if (model == "Royal Enfield Thunderbird X 350")
     document.getElementById("imgs").src =
       "./assets/img/x350/" + colorName + ".jpg";
+  if (colorName == "selectColor") {
+    if (model == "Royal Enfield Continental GT 650")
+      document.getElementById("imgs").src = "./assets/img/gt650.jpg";
+    else if (model == "Royal Enfield Interceptor GT 650")
+      document.getElementById("imgs").src = "./assets/img/interceptor650.jpg";
+    else if (model == "Royal Enfield Himalayan 350")
+      document.getElementById("imgs").src = "./assets/img/himalayan.jpg";
+    else if (model == "Royal Enfield Meteor 350")
+      document.getElementById("imgs").src = "./assets/img/meteor350.jpg";
+    else if (model == "Royal Enfield Classic 350")
+      document.getElementById("imgs").src = "./assets/img/classic350.jpg";
+    else if (model == "Royal Enfield Thunderbird X 350")
+      document.getElementById("imgs").src = "./assets/img/x350.jpg";
+  }
 }
